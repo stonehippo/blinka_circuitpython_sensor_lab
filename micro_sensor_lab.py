@@ -17,9 +17,8 @@ def get_bme():
   print(f"Current relative humidity: {round(bme.relative_humidity, 2)} %")
   print(f"Current VOC gas: {round(bme.gas, 2)} ohm")
   print(f"Current altitude: {round(bme.altitude, 2)} meters")
-  print(f"Current relative humidity: {round(bme.relative_humidity, 2)} %")
   
- def get_accel_gyro():
+def get_accel_gyro():
    # LSM6DS3 accelerometer + gyroscope
   accel_x, accel_y, accel_z = accel_gyro.acceleration
   gyro_x, gyro_y, gyro_z = accel_gyro.gyro
@@ -28,7 +27,7 @@ def get_bme():
   
   # LIS3MDL magnetometer
   mag_x, mag_y, mag_z = mag.magnetic
-  print(f"Gyro: X: {mag_x} Y: {mag_y} Z: {mag_z}")
+  print(f"Mag: X: {mag_x} Y: {mag_y} Z: {mag_z}")
 
 def get_light():
   # VEML7700 Light Sensor
@@ -38,7 +37,9 @@ def get_light():
 # take a look at the documentation for each sensor to understand optional configuration
 while True:
   get_bme()
+  print("\n------------\n")
   get_light()
+  print("\n------------\n")
   get_accel_gyro()
-  
-  sleep(0.1)
+  print("\n------------\n")
+  sleep(0.5)
