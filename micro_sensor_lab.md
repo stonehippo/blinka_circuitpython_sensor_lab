@@ -1,4 +1,4 @@
-# Micro Lab for CircuitPython
+# Micro Sensor Lab for CircuitPython
 
 The Micro Sensor Lab is a little stack of sensors for use with a desktop computer, built up around an [Adafruit MCP2221](https://www.adafruit.com/product/4471) general purpose USB adapter board and the Adafruit Blinka library, which emulates [CircuitPython](https://circuitpython.org) on desktop and single board computer systems. The result is a compact stack of sensors that can be used for experimentation and hacking. This is useful in it's own right, since you can just write a little Python to get sensor data into your computer. It's also a nice input to interactive tools like [Processing](https://processing.org).
 
