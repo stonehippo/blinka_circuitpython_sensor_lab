@@ -9,3 +9,17 @@ This code would also work fine with a standalone CircuitPython board. The beauty
 First, to use this code as I intended, you're going to need Python 3 on your computer; I recommend Python 3.10 or newer. Why not be modern.
 
 Next, you'll want to set up Blinka so you can talk to the MCP2221 over USB. Take a look at [this guide from Adafruit for setting up the MCP2221](https://learn.adafruit.com/circuitpython-libraries-on-any-computer-with-mcp2221).
+
+Now it's time to install the library driver for the various sensors:
+
+```
+python install --updgrade adafruit-circuitpython-veml7700 adafruit-circuitpython-bme680 adafruit-circuitpython-lsm6ds adafruit-circuitpython-lis3mdl
+```
+
+Lastly, don't forget to set the environment variable to enable the MCP2221 support in Blinka:
+
+```
+export BLINKA_MCP2221="1"
+```
+
+Once this is done, give the code a try!
