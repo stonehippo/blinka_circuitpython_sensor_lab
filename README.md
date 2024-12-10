@@ -13,7 +13,7 @@ Next, you'll want to set up Blinka so you can talk to the MCP2221 over USB. Take
 Now it's time to install the library driver for the various sensors:
 
 ```
-pip install --updgrade adafruit-circuitpython-veml7700 adafruit-circuitpython-bme680 adafruit-circuitpython-lsm6ds adafruit-circuitpython-lis3mdl
+pip install --upgrade adafruit-circuitpython-veml7700 adafruit-circuitpython-bme680 adafruit-circuitpython-lsm6ds adafruit-circuitpython-lis3mdl
 ```
 
 Lastly, don't forget to set the environment variable to enable the MCP2221 support in Blinka:
